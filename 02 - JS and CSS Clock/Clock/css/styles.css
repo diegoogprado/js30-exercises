@@ -1,0 +1,90 @@
+html {
+    background-image: url(../img/clouds.jpg);
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.clock {
+    border: 20px solid white;
+    border-radius: 50%;
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    margin: 50px auto;
+    padding: 2rem;
+    box-shadow:
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand {
+    width: 6px;
+    height: 50%;
+    border-radius: 5px;
+    background: black;
+    position: absolute;
+    left: 50%;
+    transform-origin: bottom;
+
+}
+.hour-hand {
+    width: 3px;
+    height: 30%;
+    bottom: 50%;
+    background: white;
+    position: absolute;
+    transform-origin: bottom ;
+}
+
+.second-hand {
+    width: 3px;
+    background: red;
+}
+
+.digital-clock {
+    width: 50rem;
+    height: 15rem;
+    background: rgba(128, 128, 128, 0.408);
+    border-radius: 500px;
+    display: flex;
+    font-size: 10rem;
+    font-weight: bolder;
+    color: white;
+    align-items: center;
+
+    
+}
+
+.digital {
+    width: 100%;
+}
+
+.dig-hour {
+    padding-left: 50px;
+}
+
+.dig-second {
+    padding-right: 50px;
+}
